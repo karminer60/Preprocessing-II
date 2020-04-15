@@ -12,6 +12,13 @@
   text-align: center;
   padding-top: 10px;
 }
+@media ( max-width: 515px ) {
+  .btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -213,6 +220,7 @@ nav a {
   .startNavigation {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 }
 .firstImage {
@@ -227,19 +235,42 @@ nav a {
   padding-top: 10px;
   padding-bottom: 10px;
 }
+@media ( max-width: 515px ) {
+  .firstImage {
+    margin-left: 10px;
+    width: 95%;
+  }
+}
 .home .content-section {
   margin: 30px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media ( max-width: 515px ) {
+  .home .content-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
 }
+@media ( max-width: 515px ) {
+  .home .content-section .text-content {
+    width: 95%;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
+}
+@media ( max-width: 515px ) {
+  .home .content-section .img-content {
+    width: 100%;
+  }
 }
 .home .content-section .img-content img {
   border-radius: 10px;
@@ -247,6 +278,14 @@ nav a {
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
+}
+@media ( max-width: 515px ) {
+  .home .inverse-content {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 100%;
+  }
 }
 .home .inverse-content .text-content {
   padding-left: 1%;
@@ -263,6 +302,11 @@ nav a {
 .home .content-destination img {
   border-radius: 10px;
 }
+@media ( max-width: 515px ) {
+  .home .content-destination {
+    width: 100%;
+  }
+}
 .home .content-pick {
   padding-top: 30px;
   border-top: 2px dashed #C0C0C0;
@@ -272,4 +316,17 @@ nav a {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media ( max-width: 515px ) {
+  .home .content-pick {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+  .home .content-pick .destination {
+    width: 100%;
+  }
 }
